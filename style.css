@@ -37,3 +37,29 @@ body{
     color: black;
     border-bottom: 1px solid black;
 }
+
+#name-social-container{
+    margin-top: 20vh;
+}
+
+#my-name{
+    opacity: 1.0;
+    font-size: 7vh;
+    letter-spacing: 0.1rem;
+    color: rgb(60, 0, 255);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+horizontal-list-social{
+    list-style: none; /*To remove default list style from filled black circle to none*/
+    padding-left: 0px;/**/
+}
+
+.horizontal-list-social li{
+    
+    font-size: 4vh;
+    display: inline-block; /*Default display of li is*/
+    margin:0px 3vw 3vh 0px;/*To add margin to our list give spaces between each text*/
+}
