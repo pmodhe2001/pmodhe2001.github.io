@@ -24,7 +24,7 @@ body{
     
     font-size: 4vh;
     display: inline-block; /*Default display of li is*/
-    margin:0px 8px 8px 0px;/*To add margin to our list give spaces between each text*/
+    margin:0px 3vw 3vh 0px;/*To add margin to our list give spaces between each text*/
 }
 
 .horizontal-list li a{
