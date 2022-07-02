@@ -1,4 +1,6 @@
 body{
+    font-size: 30px;
+    font-family: sans-serif;
     margin: 0px; /*To make margin of whole body 0*/
 }
 
@@ -9,7 +11,7 @@ body{
     background-position: center; /**/
     opacity: 0.8; /*For effect decrease opacity of bg img from 1 to 0.9*/
     background-attachment: fixed; /*Know more about this  ! Sticky nav bar ? */
-
+    padding-top: 1.2rem;
 }
 
 .text-center{
@@ -18,10 +20,11 @@ body{
 .horizontal-list{
     list-style: none; /*To remove default list style from filled black circle to none*/
     padding-left: 0px;/**/
+    margin: 0px;
 }
 
 .horizontal-list li{
-    
+    font-weight: 100;
     font-size: 4vh;
     display: inline-block; /*Default display of li is*/
     margin:0px 3vw 3vh 0px;/*To add margin to our list give spaces between each text*/
@@ -62,4 +65,155 @@ horizontal-list-social{
     font-size: 4vh;
     display: inline-block; /*Default display of li is*/
     margin:0px 3vw 3vh 0px;/*To add margin to our list give spaces between each text*/
+}
+
+.horizontal-list-social li a i:hover{
+    border-radius: 20%;
+    box-shadow: 0px 0px 6px 4px rgb(0, 0, 0);
+}
+
+#about{
+    height:auto;
+    width: 100%;
+    position:relative;/*To remove opacity effect of header our img was negative margin
+    Will place it relatively to other components*/
+    margin-top: 30px;
+}
+
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin-top: -17vh; /*To move this image up*/
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n+1){
+    background-color: white;
+}
+
+section:nth-child(2n){
+    background-color: whitesmoke;
+}
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    /*margin: 10px auto;*/
+    font-weight: 400;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+.skills-display{
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    /*height: 100px;
+    border: 2px solid black;*/
+    display: flex;
+    flex-wrap: wrap;/*No of skills should be wrap*/
+    justify-content: space-between; /*There must exist space between skills*/
+    
+}
+
+.skill-progress{
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+    /*border: 2px solid black;*/
+}
+/*Apply css to direct child of skill progress*/
+.skill-progress > div{
+border-radius: 20px 0px 0px 20px;
+box-shadow: 1px 1px 5px 2px #fffff4;
+}
+
+.skill-name span{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+/*Common margin class*/
+.mb75px{
+    margin-bottom: 75px;
+}
+/*Common  Color Classes*/
+.text-highlight{
+    color:#2857a4;
+    font-weight: 600;
+}
+
+.mb-blue{
+    background-color: #3347d9cb;
+}
+.mb-pink{
+    background-color: #ff38de;
+}
+.mb-orange{
+    background-color: #ff8400;
+}
+.mb-light-blue{
+    background-color: #23fff8;
+}
+.mb-light-green{
+    background-color: #3af058;
+}
+.mb-yellow{
+    background-color: #dafb00;
+}
+/*Common  % Classes*/
+.ninety-five{
+    width: 95%;
+    height: inherit;
+    
+}
+.twenty{
+    width: 20%;
+    height: inherit;
+}
+.fifty{
+    width: 50%;
+    height: inherit;
+}
+.ten{
+    width: 10%;
+    height: inherit;
 }
