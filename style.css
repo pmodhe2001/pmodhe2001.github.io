@@ -1,0 +1,13 @@
+body{
+    margin: 0px;
+}
+
+#body-header{
+    height: 65vh;
+    background-image: url(Resources/head.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    background-attachment: fixed; /*Know more about this  ! Sticky nav bar ? */
+    
+}
