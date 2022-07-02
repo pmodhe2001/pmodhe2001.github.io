@@ -1,13 +1,39 @@
 body{
-    margin: 0px;
+    margin: 0px; /*To make margin of whole body 0*/
 }
 
 #body-header{
-    height: 65vh;
+    height: 65vh;   /*set header image as 65 of viewport height*/
     background-image: url(Resources/head.jpg);
-    background-size: cover;
-    background-position: center;
-    opacity: 0.8;
+    background-size: cover; /**/
+    background-position: center; /**/
+    opacity: 0.8; /*For effect decrease opacity of bg img from 1 to 0.9*/
     background-attachment: fixed; /*Know more about this  ! Sticky nav bar ? */
+
+}
+
+.text-center{
+    text-align: center; /*For bringing text to cente we made a seperate class to achieve this*/
+}
+.horizontal-list{
+    list-style: none; /*To remove default list style from filled black circle to none*/
+    padding-left: 0px;/**/
+}
+
+.horizontal-list li{
     
+    font-size: 4vh;
+    display: inline-block; /*Default display of li is*/
+    margin:0px 8px 8px 0px;/*To add margin to our list give spaces between each text*/
+}
+
+.horizontal-list li a{
+    color:white;
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.horizontal-list li a:hover{
+    background-color: aliceblue;
+    color: black;
+    border-bottom: 1px solid black;
 }
