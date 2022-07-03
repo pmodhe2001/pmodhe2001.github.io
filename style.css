@@ -222,7 +222,7 @@ box-shadow: 1px 1px 5px 2px #fffff4;
 .timeline{
     position: relative;
     width: 75%;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
 }
 
 .timeline-box{
@@ -230,7 +230,7 @@ box-shadow: 1px 1px 5px 2px #fffff4;
     width: 40%;
     left: 5%;
     min-height: 150px;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     margin: 5px;
 }
 
@@ -280,9 +280,45 @@ box-shadow: 1px 1px 5px 2px #fffff4;
     z-index: 2;
 }
 
+.timeline-logo img{
+    height: 10vh;
+    width: 10vh;
+   
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
 /*Projects Section*/
 
 #projects-container {
+    /*border: 2px solid black;*/
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
